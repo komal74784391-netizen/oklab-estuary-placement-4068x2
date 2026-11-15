@@ -1,2 +1,0 @@
-class FinWhaleEncoder:
-    pass
