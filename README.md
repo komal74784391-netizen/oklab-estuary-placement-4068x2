@@ -1,8 +1,20 @@
-# Self-supervised embeddings for fin whale song segmentation
+# Sparse sensor placement for estuarine soundscape mapping
 
-**Repository status: 🚧 To be released.**
+Implementation of the placement solvers and coverage metrics described in
+"Sparse sensor placement for estuarine soundscape mapping"
+(*Ecological Informatics Letters*, 2022, DOI 10.1016/eil.2022.104873).
 
-This repository currently contains only interface stubs while the training
-code, pretrained embeddings and evaluation scripts are being cleaned up.
-The full implementation will be pushed here after internal review; nothing
-in this repository is runnable yet.
+## Repository status
+
+Released. Both the greedy solver and the convex relaxation, the coverage
+metrics and the two estuary deployments used in the paper are included.
+
+## Contents
+
+- `src/placement/greedy.py` - lazy greedy submodular maximisation
+- `src/placement/relaxation.py` - convex relaxation solver
+- `src/placement/coverage.py` - soundscape coverage metrics
+- `scripts/optimize_placement.py`
+- `scripts/evaluate_coverage.py`
+- `configs/estuary_sites.yaml`
+- `tests/test_coverage.py`

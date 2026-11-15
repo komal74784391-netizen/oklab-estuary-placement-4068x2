@@ -1,0 +1,9 @@
+sites:
+  - name: North Marsh
+    grid_rows: 12
+    grid_cols: 18
+  - name: South Channel
+    grid_rows: 10
+    grid_cols: 15
+budget: 8
+solver: greedy
